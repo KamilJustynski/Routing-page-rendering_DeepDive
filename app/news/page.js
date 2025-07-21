@@ -1,20 +1,12 @@
 import Link from "next/link";
+import { DUMMY_NEWS } from "@/dummy-news";
+import NewsList from "@/components/news-list";
 
 const NewsPage = () => {
   return (
     <>
-      <header>News Page</header>
-      <ul>
-        <li>
-          <Link href="/news/first-news-page">First News Page</Link>
-        </li>
-        <li>
-          <Link href="/news/second-news-page">Second News Page</Link>
-        </li>
-        <li>
-          <Link href="/news/third-news-page">Third News Page</Link>
-        </li>
-      </ul>
+      <h1>News Page</h1>
+      <NewsList news={DUMMY_NEWS} />
     </>
   );
 };
